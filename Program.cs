@@ -14,6 +14,11 @@ namespace FMaj.CapcomDirectServer
 
         static void Main(string[] args)
         {
+            var config = new NLog.Config.LoggingConfiguration();
+            var logconsole = new NLog.Targets.ConsoleTarget("logconsole");
+            config.AddRule(LogLevel.Trace, LogLevel.Fatal, logconsole);
+            NLog.LogManager.Configuration = config;
+
             Log.Info("=============================");
             Log.Info("Capcom Direct Server");
             Log.Info("=============================");
