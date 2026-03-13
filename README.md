@@ -1,0 +1,13 @@
+## Setup
+- Server preparation
+  - Clone the repository: `git clone https://github.com/filipmaj1/CapcomDirectServer.git`
+  - Open `CapcomDirectServer.sln` and build `CapcomDirectServer.exe`
+  - Allow incoming connections through firewall: `Win + Q` -> `Allow an app through Windows Firewall`
+- Database preparation
+  - Install XAMPP: https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.2.12/
+  - Launch the `XAMPP Control Panel` and start `Apache` and `MySQL`
+  - Open phpMyAdmin: http://localhost/phpmyadmin/
+  - Import the database file [`data/db.sql`](data/db.sql) using phpMyAdmin’s Import tab
+- Launching the server
+  - Ensure `MySQL` is running in the `XAMPP Control Panel`
+  - Run `CapcomDirectServer.exe`
